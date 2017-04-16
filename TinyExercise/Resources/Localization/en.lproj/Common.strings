@@ -1,0 +1,12 @@
+// Ticket
+"tickets" = "Tickets";
+
+
+// Ticket Status
+"new" = "New";
+"open" = "Open";
+"pending" = "Pending";
+
+// Actions
+"try.again" = "Try Again";
+"cancel" = "cancel";

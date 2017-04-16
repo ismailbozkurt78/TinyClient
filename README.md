@@ -1,0 +1,42 @@
+# TinyClient
+
+## Summary
+
+Tiny client app to monitor service tickets
+
+## Requirements
+
+- iOS 10.0
+- Xcode 8.3.1
+- Carthage 0.18.1
+
+## Frameworks
+
+- [TinyNetworking](https://github.com/ismailbozkurt78/TinyNetworking)
+- [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper)
+
+
+## Architecture
+
+A variant of [VIPER](https://www.objc.io/issues/13-architecture/viper/) architecture implemented, in order to create the most possible encapsulation within the project.
+
+## Modules
+
+### Ticket List
+#### Builder
+[TicketListModuleBuilder](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/TicketListModuleBuilder.swift) builds ticket list viper module and returns the corresponding viewController instance. Builders are the entry point of every module and only component which knows the exact classes of the components. The other components communicate with each other via protocols.
+#### Presenter
+[TicketListPresenter](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/Presenter/TicketListPresenter.swift) conforms the [TicketListEventHandler](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/Presenter/TicketListEventHandler.swift) protocol to talk with View. It is responsible for handling the system/user events. Moreover, it manages and populates the [TicketListView](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/View/TicketListView.swift) with [ViewModel](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/View/TicketViewModel.swift)s
+#### Interactor
+[TicketListDefaultInteractor](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/Interactor/TicketListDefaultInteractor.swift) conforms the [TicketListInteractor](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/Interactor/TicketListInteractor.swift), which is responsible of defining all business rules of ticket list module.
+#### Wireframe
+Wireframes are responsible of the navigation between the VIPER modules. Since there is only one viper module in the application, no wireframe is implemented.
+#### View
+[Views](https://github.com/ismailbozkurt78/TinyClient/tree/master/TinyExercise/Modules/TicketList/View) are simply views. But in VIPER, viewControllers are also considered as views. So the view will hand over the user or system defined events to eventHandler which is [TicketListPresenter](https://github.com/ismailbozkurt78/TinyClient/blob/master/TinyExercise/Modules/TicketList/Presenter/TicketListPresenter.swift). Also the other responsibilities of the Views are handling the all UI related tasks like animations, etc.
+#### Service
+In theory the interactor is the one who contacts with the entities and server. However, the network requests are usually long and ugly. so we use a dedicated service class to encapsulate all network calls. [TicketListService](https://github.com/ismailbozkurt78/TinyClient/tree/master/TinyExercise/Services/Ticket) uses a rest client to make rest API calls.
+
+## Technical Debts
+1.	Removing the user authentication credentials from the code is the most urgent task. Implementing a proper login and if necessary storing user username and password on keychain are the best practices for users' security.
+1.	Improving the [TinyNetworking](https://github.com/ismailbozkurt78/TinyNetworking) or replacing it with an open source Swift networking API. TinyNetworking currently supports on HTTP Get method and has limited features compared to other frameworks like [Alamofire](https://github.com/Alamofire/Alamofire).
+1. Better unit tests with proper mocking and stubbing support.

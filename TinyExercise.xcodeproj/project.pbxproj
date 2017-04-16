@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8327013C19B607D500AF50E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013B19B607D500AF50E7 /* Foundation.framework */; };
+		8327013E19B607D500AF50E7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013D19B607D500AF50E7 /* CoreGraphics.framework */; };
+		8327014019B607D500AF50E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013F19B607D500AF50E7 /* UIKit.framework */; };
+		8327015519B607D500AF50E7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327015419B607D500AF50E7 /* XCTest.framework */; };
+		8327015619B607D500AF50E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013B19B607D500AF50E7 /* Foundation.framework */; };
+		8327015719B607D500AF50E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8327013F19B607D500AF50E7 /* UIKit.framework */; };
+		8327015F19B607D500AF50E7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8327015D19B607D500AF50E7 /* InfoPlist.strings */; };
+		EC2A13041E210F6B007143B9 /* EndPointFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A13031E210F6B007143B9 /* EndPointFactoryTests.swift */; };
+		EC2A13071E2110E8007143B9 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC80277C1E210168008D0F8E /* ObjectMapper.framework */; };
+		EC469AF71E211A3300195B51 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469AF61E211A3300195B51 /* Ticket.swift */; };
+		EC469AF81E211A3300195B51 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469AF61E211A3300195B51 /* Ticket.swift */; };
+		EC469AFD1E211E1200195B51 /* TicketDefaultServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469AFC1E211E1200195B51 /* TicketDefaultServiceTests.swift */; };
+		EC469B001E214F1000195B51 /* TicketListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469AFF1E214F1000195B51 /* TicketListInteractor.swift */; };
+		EC469B011E214F1000195B51 /* TicketListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469AFF1E214F1000195B51 /* TicketListInteractor.swift */; };
+		EC469B031E214FF300195B51 /* TicketListDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B021E214FF300195B51 /* TicketListDefaultInteractor.swift */; };
+		EC469B041E214FF300195B51 /* TicketListDefaultInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B021E214FF300195B51 /* TicketListDefaultInteractor.swift */; };
+		EC469B101E21546A00195B51 /* TicketListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B0E1E21546A00195B51 /* TicketListEventHandler.swift */; };
+		EC469B111E21546A00195B51 /* TicketListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B0E1E21546A00195B51 /* TicketListEventHandler.swift */; };
+		EC469B121E21546A00195B51 /* TicketListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B0F1E21546A00195B51 /* TicketListPresenter.swift */; };
+		EC469B131E21546A00195B51 /* TicketListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B0F1E21546A00195B51 /* TicketListPresenter.swift */; };
+		EC469B151E2154B800195B51 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B141E2154B800195B51 /* TicketListView.swift */; };
+		EC469B161E2154B800195B51 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B141E2154B800195B51 /* TicketListView.swift */; };
+		EC469B181E21551900195B51 /* TicketListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B171E21551900195B51 /* TicketListTableViewController.swift */; };
+		EC469B1A1E2155F800195B51 /* TicketListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B191E2155F800195B51 /* TicketListModuleBuilder.swift */; };
+		EC469B1D1E21589700195B51 /* TicketMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B1C1E21589700195B51 /* TicketMapper.swift */; };
+		EC469B1E1E21589700195B51 /* TicketMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B1C1E21589700195B51 /* TicketMapper.swift */; };
+		EC469B211E21590000195B51 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B201E21590000195B51 /* TicketViewModel.swift */; };
+		EC469B221E21590000195B51 /* TicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC469B201E21590000195B51 /* TicketViewModel.swift */; };
+		EC7162041E211147001BCD06 /* EndPointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7162021E211147001BCD06 /* EndPointFactory.swift */; };
+		EC7162051E211147001BCD06 /* EndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC7162031E211147001BCD06 /* EndPoints.plist */; };
+		EC7162061E21118B001BCD06 /* EndPointFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7162021E211147001BCD06 /* EndPointFactory.swift */; };
+		EC7162071E21118E001BCD06 /* EndPoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC7162031E211147001BCD06 /* EndPoints.plist */; };
+		EC80277D1E210168008D0F8E /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC80277C1E210168008D0F8E /* ObjectMapper.framework */; };
+		EC80277E1E210178008D0F8E /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EC80277C1E210168008D0F8E /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC8423511E2298C000F446D5 /* TicketListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8423501E2298C000F446D5 /* TicketListInteractorTests.swift */; };
+		ECB135691E215E910062AC33 /* TicketMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB135681E215E910062AC33 /* TicketMapperTests.swift */; };
+		ECB1356B1E2166E00062AC33 /* TicketList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB1356A1E2166E00062AC33 /* TicketList.storyboard */; };
+		ECB1356D1E2172880062AC33 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1356C1E2172880062AC33 /* TicketCell.swift */; };
+		ECB1356F1E2247990062AC33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1356E1E2247990062AC33 /* AppDelegate.swift */; };
+		ECB135731E224E440062AC33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECB135721E224E440062AC33 /* LaunchScreen.storyboard */; };
+		ECB135771E2250C60062AC33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB135761E2250C60062AC33 /* Images.xcassets */; };
+		ECB2082D1E2107D700BEEFD0 /* TicketDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2082B1E2107D700BEEFD0 /* TicketDefaultService.swift */; };
+		ECB2082E1E2107D700BEEFD0 /* TicketDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2082B1E2107D700BEEFD0 /* TicketDefaultService.swift */; };
+		ECB2082F1E2107D700BEEFD0 /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2082C1E2107D700BEEFD0 /* TicketService.swift */; };
+		ECB208301E2107D700BEEFD0 /* TicketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2082C1E2107D700BEEFD0 /* TicketService.swift */; };
+		ECB414601E226DA400876085 /* Common.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECB4145D1E226DA400876085 /* Common.strings */; };
+		ECB414611E226DA400876085 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB4145F1E226DA400876085 /* Localization.swift */; };
+		ECB414631E22712B00876085 /* TicketList.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECB414621E22712B00876085 /* TicketList.strings */; };
+		ECB414651E22911500876085 /* TicketListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB414641E22911500876085 /* TicketListPresenterTests.swift */; };
+		ECBA41671EA3A397009C36CD /* TinyNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBA41661EA3A397009C36CD /* TinyNetworking.framework */; };
+		ECBA41681EA3A397009C36CD /* TinyNetworking.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECBA41661EA3A397009C36CD /* TinyNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8327015819B607D500AF50E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8327013019B607D500AF50E7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8327013719B607D500AF50E7;
+			remoteInfo = ZendeskExercise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC3FB4D81E1F1055006D611E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ECBA41681EA3A397009C36CD /* TinyNetworking.framework in CopyFiles */,
+				EC80277E1E210178008D0F8E /* ObjectMapper.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8327013819B607D500AF50E7 /* TinyExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8327013B19B607D500AF50E7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8327013D19B607D500AF50E7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8327013F19B607D500AF50E7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8327014919B607D500AF50E7 /* TinyExercise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinyExercise-Prefix.pch"; sourceTree = "<group>"; };
+		8327015319B607D500AF50E7 /* TinyExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8327015419B607D500AF50E7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8327015C19B607D500AF50E7 /* TinyExerciseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TinyExerciseTests-Info.plist"; sourceTree = "<group>"; };
+		8327015E19B607D500AF50E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC2A13031E210F6B007143B9 /* EndPointFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointFactoryTests.swift; sourceTree = "<group>"; };
+		EC469AF61E211A3300195B51 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		EC469AFC1E211E1200195B51 /* TicketDefaultServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDefaultServiceTests.swift; sourceTree = "<group>"; };
+		EC469AFF1E214F1000195B51 /* TicketListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListInteractor.swift; sourceTree = "<group>"; };
+		EC469B021E214FF300195B51 /* TicketListDefaultInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListDefaultInteractor.swift; sourceTree = "<group>"; };
+		EC469B0E1E21546A00195B51 /* TicketListEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListEventHandler.swift; sourceTree = "<group>"; };
+		EC469B0F1E21546A00195B51 /* TicketListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListPresenter.swift; sourceTree = "<group>"; };
+		EC469B141E2154B800195B51 /* TicketListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
+		EC469B171E21551900195B51 /* TicketListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListTableViewController.swift; sourceTree = "<group>"; };
+		EC469B191E2155F800195B51 /* TicketListModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListModuleBuilder.swift; sourceTree = "<group>"; };
+		EC469B1C1E21589700195B51 /* TicketMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketMapper.swift; sourceTree = "<group>"; };
+		EC469B201E21590000195B51 /* TicketViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewModel.swift; sourceTree = "<group>"; };
+		EC7162021E211147001BCD06 /* EndPointFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointFactory.swift; sourceTree = "<group>"; };
+		EC7162031E211147001BCD06 /* EndPoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EndPoints.plist; sourceTree = "<group>"; };
+		EC80277C1E210168008D0F8E /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		EC84234F1E2295D500F446D5 /* TinyExerciseTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TinyExerciseTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EC8423501E2298C000F446D5 /* TicketListInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListInteractorTests.swift; sourceTree = "<group>"; };
+		ECB135681E215E910062AC33 /* TicketMapperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketMapperTests.swift; sourceTree = "<group>"; };
+		ECB1356A1E2166E00062AC33 /* TicketList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TicketList.storyboard; sourceTree = "<group>"; };
+		ECB1356C1E2172880062AC33 /* TicketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		ECB1356E1E2247990062AC33 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECB135721E224E440062AC33 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECB135741E224FBC0062AC33 /* TinyExercise-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TinyExercise-Info.plist"; sourceTree = "<group>"; };
+		ECB135761E2250C60062AC33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECB135781E2252210062AC33 /* TinyExercise-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TinyExercise-Bridging-Header.h"; sourceTree = "<group>"; };
+		ECB2082B1E2107D700BEEFD0 /* TicketDefaultService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDefaultService.swift; sourceTree = "<group>"; };
+		ECB2082C1E2107D700BEEFD0 /* TicketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketService.swift; sourceTree = "<group>"; };
+		ECB4145E1E226DA400876085 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
+		ECB4145F1E226DA400876085 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		ECB414621E22712B00876085 /* TicketList.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TicketList.strings; sourceTree = "<group>"; };
+		ECB414641E22911500876085 /* TicketListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListPresenterTests.swift; sourceTree = "<group>"; };
+		ECBA41661EA3A397009C36CD /* TinyNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyNetworking.framework; path = Carthage/Build/iOS/TinyNetworking.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8327013519B607D500AF50E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECBA41671EA3A397009C36CD /* TinyNetworking.framework in Frameworks */,
+				8327013E19B607D500AF50E7 /* CoreGraphics.framework in Frameworks */,
+				8327014019B607D500AF50E7 /* UIKit.framework in Frameworks */,
+				8327013C19B607D500AF50E7 /* Foundation.framework in Frameworks */,
+				EC80277D1E210168008D0F8E /* ObjectMapper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327015019B607D500AF50E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8327015519B607D500AF50E7 /* XCTest.framework in Frameworks */,
+				8327015719B607D500AF50E7 /* UIKit.framework in Frameworks */,
+				EC2A13071E2110E8007143B9 /* ObjectMapper.framework in Frameworks */,
+				8327015619B607D500AF50E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8327012F19B607D500AF50E7 = {
+			isa = PBXGroup;
+			children = (
+				8327014119B607D500AF50E7 /* TinyExercise */,
+				8327015A19B607D500AF50E7 /* TinyExerciseTests */,
+				8327013A19B607D500AF50E7 /* Frameworks */,
+				8327013919B607D500AF50E7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8327013919B607D500AF50E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8327013819B607D500AF50E7 /* TinyExercise.app */,
+				8327015319B607D500AF50E7 /* TinyExerciseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8327013A19B607D500AF50E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECBA41661EA3A397009C36CD /* TinyNetworking.framework */,
+				EC80277C1E210168008D0F8E /* ObjectMapper.framework */,
+				8327013B19B607D500AF50E7 /* Foundation.framework */,
+				8327013D19B607D500AF50E7 /* CoreGraphics.framework */,
+				8327013F19B607D500AF50E7 /* UIKit.framework */,
+				8327015419B607D500AF50E7 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8327014119B607D500AF50E7 /* TinyExercise */ = {
+			isa = PBXGroup;
+			children = (
+				ECB1356E1E2247990062AC33 /* AppDelegate.swift */,
+				EC80277A1E20FF22008D0F8E /* Modules */,
+				ECB208291E2107D700BEEFD0 /* Services */,
+				EC80278F1E2103C0008D0F8E /* Models */,
+				8327014219B607D500AF50E7 /* SupportingFiles */,
+				EC7162011E211147001BCD06 /* Resources */,
+			);
+			path = TinyExercise;
+			sourceTree = "<group>";
+		};
+		8327014219B607D500AF50E7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ECB135781E2252210062AC33 /* TinyExercise-Bridging-Header.h */,
+				ECB135741E224FBC0062AC33 /* TinyExercise-Info.plist */,
+				8327014919B607D500AF50E7 /* TinyExercise-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8327015A19B607D500AF50E7 /* TinyExerciseTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECB135661E215E5A0062AC33 /* Modules */,
+				EC469AF91E211DCF00195B51 /* Services */,
+				EC2A13021E210F3D007143B9 /* Resources */,
+				8327015B19B607D500AF50E7 /* Supporting Files */,
+			);
+			path = TinyExerciseTests;
+			sourceTree = "<group>";
+		};
+		8327015B19B607D500AF50E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC84234F1E2295D500F446D5 /* TinyExerciseTests-Bridging-Header.h */,
+				8327015C19B607D500AF50E7 /* TinyExerciseTests-Info.plist */,
+				8327015D19B607D500AF50E7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC2A13021E210F3D007143B9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC2A13031E210F6B007143B9 /* EndPointFactoryTests.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC469AF51E2119F400195B51 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				EC469AF61E211A3300195B51 /* Ticket.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		EC469AF91E211DCF00195B51 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC469AFC1E211E1200195B51 /* TicketDefaultServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC469AFE1E214EAA00195B51 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EC469AFF1E214F1000195B51 /* TicketListInteractor.swift */,
+				EC469B021E214FF300195B51 /* TicketListDefaultInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EC469B061E21534100195B51 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EC469B0E1E21546A00195B51 /* TicketListEventHandler.swift */,
+				EC469B0F1E21546A00195B51 /* TicketListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EC469B0D1E21542A00195B51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC469B141E2154B800195B51 /* TicketListView.swift */,
+				EC469B171E21551900195B51 /* TicketListTableViewController.swift */,
+				EC469B201E21590000195B51 /* TicketViewModel.swift */,
+				ECB1356C1E2172880062AC33 /* TicketCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC469B1B1E21582000195B51 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				EC469B1C1E21589700195B51 /* TicketMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		EC7162011E211147001BCD06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4145C1E226DA400876085 /* Localization */,
+				ECB135761E2250C60062AC33 /* Images.xcassets */,
+				EC7162021E211147001BCD06 /* EndPointFactory.swift */,
+				EC7162031E211147001BCD06 /* EndPoints.plist */,
+				ECB135721E224E440062AC33 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC80277A1E20FF22008D0F8E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EC80277B1E20FF58008D0F8E /* TicketList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EC80277B1E20FF58008D0F8E /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				EC469B191E2155F800195B51 /* TicketListModuleBuilder.swift */,
+				ECB1356A1E2166E00062AC33 /* TicketList.storyboard */,
+				EC469B0D1E21542A00195B51 /* View */,
+				EC469B061E21534100195B51 /* Presenter */,
+				EC469AFE1E214EAA00195B51 /* Interactor */,
+				EC469B1B1E21582000195B51 /* Mapper */,
+			);
+			path = TicketList;
+			sourceTree = "<group>";
+		};
+		EC80278F1E2103C0008D0F8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC469AF51E2119F400195B51 /* Ticket */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECB135661E215E5A0062AC33 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ECB135671E215E740062AC33 /* TicketList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ECB135671E215E740062AC33 /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				ECB135681E215E910062AC33 /* TicketMapperTests.swift */,
+				ECB414641E22911500876085 /* TicketListPresenterTests.swift */,
+				EC8423501E2298C000F446D5 /* TicketListInteractorTests.swift */,
+			);
+			path = TicketList;
+			sourceTree = "<group>";
+		};
+		ECB208291E2107D700BEEFD0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2082A1E2107D700BEEFD0 /* Ticket */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ECB2082A1E2107D700BEEFD0 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				ECB2082C1E2107D700BEEFD0 /* TicketService.swift */,
+				ECB2082B1E2107D700BEEFD0 /* TicketDefaultService.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		ECB4145C1E226DA400876085 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				ECB4145F1E226DA400876085 /* Localization.swift */,
+				ECB4145D1E226DA400876085 /* Common.strings */,
+				ECB414621E22712B00876085 /* TicketList.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8327013719B607D500AF50E7 /* TinyExercise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8327016419B607D500AF50E7 /* Build configuration list for PBXNativeTarget "TinyExercise" */;
+			buildPhases = (
+				8327013419B607D500AF50E7 /* Sources */,
+				8327013519B607D500AF50E7 /* Frameworks */,
+				8327013619B607D500AF50E7 /* Resources */,
+				EC3FB4D81E1F1055006D611E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyExercise;
+			productName = ZendeskExercise;
+			productReference = 8327013819B607D500AF50E7 /* TinyExercise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8327015219B607D500AF50E7 /* TinyExerciseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8327016719B607D500AF50E7 /* Build configuration list for PBXNativeTarget "TinyExerciseTests" */;
+			buildPhases = (
+				8327014F19B607D500AF50E7 /* Sources */,
+				8327015019B607D500AF50E7 /* Frameworks */,
+				8327015119B607D500AF50E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8327015919B607D500AF50E7 /* PBXTargetDependency */,
+			);
+			name = TinyExerciseTests;
+			productName = ZendeskExerciseTests;
+			productReference = 8327015319B607D500AF50E7 /* TinyExerciseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8327013019B607D500AF50E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IB;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Tiny;
+				TargetAttributes = {
+					8327013719B607D500AF50E7 = {
+						DevelopmentTeam = KPSV2KCFP6;
+						LastSwiftMigration = 0810;
+					};
+					8327015219B607D500AF50E7 = {
+						LastSwiftMigration = 0810;
+						TestTargetID = 8327013719B607D500AF50E7;
+					};
+				};
+			};
+			buildConfigurationList = 8327013319B607D500AF50E7 /* Build configuration list for PBXProject "TinyExercise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8327012F19B607D500AF50E7;
+			productRefGroup = 8327013919B607D500AF50E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8327013719B607D500AF50E7 /* TinyExercise */,
+				8327015219B607D500AF50E7 /* TinyExerciseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8327013619B607D500AF50E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB1356B1E2166E00062AC33 /* TicketList.storyboard in Resources */,
+				ECB135771E2250C60062AC33 /* Images.xcassets in Resources */,
+				EC7162051E211147001BCD06 /* EndPoints.plist in Resources */,
+				ECB135731E224E440062AC33 /* LaunchScreen.storyboard in Resources */,
+				ECB414631E22712B00876085 /* TicketList.strings in Resources */,
+				ECB414601E226DA400876085 /* Common.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327015119B607D500AF50E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8327015F19B607D500AF50E7 /* InfoPlist.strings in Resources */,
+				EC7162071E21118E001BCD06 /* EndPoints.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8327013419B607D500AF50E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC469B031E214FF300195B51 /* TicketListDefaultInteractor.swift in Sources */,
+				EC7162041E211147001BCD06 /* EndPointFactory.swift in Sources */,
+				ECB1356F1E2247990062AC33 /* AppDelegate.swift in Sources */,
+				ECB2082D1E2107D700BEEFD0 /* TicketDefaultService.swift in Sources */,
+				EC469AF71E211A3300195B51 /* Ticket.swift in Sources */,
+				ECB1356D1E2172880062AC33 /* TicketCell.swift in Sources */,
+				EC469B151E2154B800195B51 /* TicketListView.swift in Sources */,
+				EC469B1D1E21589700195B51 /* TicketMapper.swift in Sources */,
+				EC469B181E21551900195B51 /* TicketListTableViewController.swift in Sources */,
+				ECB2082F1E2107D700BEEFD0 /* TicketService.swift in Sources */,
+				EC469B121E21546A00195B51 /* TicketListPresenter.swift in Sources */,
+				EC469B001E214F1000195B51 /* TicketListInteractor.swift in Sources */,
+				EC469B101E21546A00195B51 /* TicketListEventHandler.swift in Sources */,
+				ECB414611E226DA400876085 /* Localization.swift in Sources */,
+				EC469B1A1E2155F800195B51 /* TicketListModuleBuilder.swift in Sources */,
+				EC469B211E21590000195B51 /* TicketViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8327014F19B607D500AF50E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB208301E2107D700BEEFD0 /* TicketService.swift in Sources */,
+				EC469AFD1E211E1200195B51 /* TicketDefaultServiceTests.swift in Sources */,
+				ECB414651E22911500876085 /* TicketListPresenterTests.swift in Sources */,
+				EC469B1E1E21589700195B51 /* TicketMapper.swift in Sources */,
+				EC469B131E21546A00195B51 /* TicketListPresenter.swift in Sources */,
+				ECB135691E215E910062AC33 /* TicketMapperTests.swift in Sources */,
+				EC469B011E214F1000195B51 /* TicketListInteractor.swift in Sources */,
+				EC7162061E21118B001BCD06 /* EndPointFactory.swift in Sources */,
+				EC8423511E2298C000F446D5 /* TicketListInteractorTests.swift in Sources */,
+				EC469B041E214FF300195B51 /* TicketListDefaultInteractor.swift in Sources */,
+				EC469B161E2154B800195B51 /* TicketListView.swift in Sources */,
+				EC469AF81E211A3300195B51 /* Ticket.swift in Sources */,
+				EC2A13041E210F6B007143B9 /* EndPointFactoryTests.swift in Sources */,
+				EC469B221E21590000195B51 /* TicketViewModel.swift in Sources */,
+				EC469B111E21546A00195B51 /* TicketListEventHandler.swift in Sources */,
+				ECB2082E1E2107D700BEEFD0 /* TicketDefaultService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8327015919B607D500AF50E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8327013719B607D500AF50E7 /* TinyExercise */;
+			targetProxy = 8327015819B607D500AF50E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8327015D19B607D500AF50E7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8327015E19B607D500AF50E7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECB4145D1E226DA400876085 /* Common.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECB4145E1E226DA400876085 /* en */,
+			);
+			name = Common.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8327016219B607D500AF50E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8327016319B607D500AF50E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8327016519B607D500AF50E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = KPSV2KCFP6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyExercise/SupportingFiles/TinyExercise-Prefix.pch";
+				INFOPLIST_FILE = "TinyExercise/SupportingFiles/TinyExercise-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiny.exercise.refactor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyExercise/SupportingFiles/TinyExercise-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8327016619B607D500AF50E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = KPSV2KCFP6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyExercise/SupportingFiles/TinyExercise-Prefix.pch";
+				INFOPLIST_FILE = "TinyExercise/SupportingFiles/TinyExercise-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiny.exercise.refactor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyExercise/SupportingFiles/TinyExercise-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8327016819B607D500AF50E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TinyExercise.app/TinyExercise";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyExercise/TinyExercise-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TinyExerciseTests/TinyExerciseTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.Tinytopher.lapat.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyExerciseTests/TinyExerciseTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8327016919B607D500AF50E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TinyExercise.app/TinyExercise";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinyExercise/TinyExercise-Prefix.pch";
+				INFOPLIST_FILE = "TinyExerciseTests/TinyExerciseTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ibm.Tinytopher.lapat.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TinyExerciseTests/TinyExerciseTests-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8327013319B607D500AF50E7 /* Build configuration list for PBXProject "TinyExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327016219B607D500AF50E7 /* Debug */,
+				8327016319B607D500AF50E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8327016419B607D500AF50E7 /* Build configuration list for PBXNativeTarget "TinyExercise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327016519B607D500AF50E7 /* Debug */,
+				8327016619B607D500AF50E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8327016719B607D500AF50E7 /* Build configuration list for PBXNativeTarget "TinyExerciseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8327016819B607D500AF50E7 /* Debug */,
+				8327016919B607D500AF50E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8327013019B607D500AF50E7 /* Project object */;
+}

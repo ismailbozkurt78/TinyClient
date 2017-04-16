@@ -1,0 +1,10 @@
+framework module TinyNetworking {
+  umbrella header "TinyNetworking.h"
+
+  export *
+  module * { export * }
+}
+
+module TinyNetworking.Swift {
+    header "TinyNetworking-Swift.h"
+}
